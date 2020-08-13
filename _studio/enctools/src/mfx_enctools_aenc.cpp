@@ -91,7 +91,7 @@ mfxStatus AEnc_EncTool::GetInputFrameInfo(mfxFrameInfo &frameInfo)
 
 bool AEnc_EncTool::DoDownScaling(mfxFrameInfo const & frameInfo)
 {
-    if (frameInfo.Width > ENC_TOOLS_DS_FRAME_WIDTH + 128 || frameInfo.Height > ENC_TOOLS_DS_FRAME_HEIGHT + 128)
+    if (frameInfo.Width > ENC_TOOLS_DS_FRAME_WIDTH + (ENC_TOOLS_DS_FRAME_WIDTH >> 1) || frameInfo.Height > ENC_TOOLS_DS_FRAME_HEIGHT + (ENC_TOOLS_DS_FRAME_HEIGHT >> 1))
         return true;
     return false;
 }
