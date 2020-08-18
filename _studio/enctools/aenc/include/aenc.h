@@ -55,7 +55,7 @@ extern "C" {
         mfxU32 LTR;
         mfxU32 MiniGopSize;
         mfxU32 PyramidLayer;
-        mfxU32 Type; //FrameType, e.g. MFX_FRAMETYPE_I
+        mfxU32 Type; //Frame type, e.g. MFX_FRAMETYPE_I
         mfxI32 DeltaQP;
         mfxU32 ClassAPQ;
         mfxU32 ClassCmplx;
